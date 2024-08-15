@@ -142,7 +142,9 @@ class _HomeViewState extends State<HomeView> {
                             return "Please enter a valid email";
                           }
                         },
-                        decoration: textFieldDecoration("Enter Your email")),
+                        decoration: textFieldDecoration(
+                          "Enter Your email",
+                        )),
                     SizedBox(
                       height: height * 0.05,
                     ),
@@ -169,7 +171,7 @@ class _HomeViewState extends State<HomeView> {
                         backgroundColor: WidgetStatePropertyAll(Colors.blue)),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        onDone;
+                        onDone();
                       }
                     },
                     child: const Text(
